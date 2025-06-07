@@ -1,0 +1,10 @@
+docker compose stop whatsapp-mcp-server
+
+docker compose rm -f whatsapp-mcp-server
+
+docker compose up -d whatsapp-mcp-server
+
+root@vultr:~/automation-stack/whatsapp-mcp/whatsapp-dashboard# npm run build
+
+docker compose build whatsapp-mcp-server
+docker compose up -d whatsapp-mcp-server
