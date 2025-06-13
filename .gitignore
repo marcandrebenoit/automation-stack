@@ -1,0 +1,48 @@
+# === PYTHON ===
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+.env
+.venv/
+venv/
+*.log
+
+# === NODE / REACT (dashboard) ===
+node_modules/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log
+*.lock
+whatsapp-mcp/whatsapp-dashboard/dist/
+
+# === DOCKER / SYSTEM ===
+*.pid
+*.sock
+docker-compose.override.yml
+
+# === BACKUPS ===
+n8n_postgres_backups/
+*.sql
+*.dump
+
+# === OS / SYSTEM ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.swp
+*.swo
+*~
+
+# === CLOUD FLARE TUNNEL CREDENTIALS (should never be committed) ===
+/.root/.cloudflared/
+*.pem
+*.json
+
+# === IDE SETTINGS ===
+.vscode/
+.idea/
